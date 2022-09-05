@@ -1,0 +1,39 @@
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/animate.css/animate.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400;1,700&family=Petit+Formal+Script&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap');
+
+
+
+
+$primary :#007822;
+$navbar-nav-link-padding-x:2rem;
+$navbar-brand-font-size:2rem;
+$nav-link-font-size:1 rem;
+$font-family-sans-serif:'Lobster Two', cursive;
+@import "node_modules/bootstrap/scss/bootstrap";
+.nav-link.active{
+  color: white !important;
+}
+p{
+  font-family: 'Petit Formal Script', cursive;
+}
+.one{
+  font-family: 'Plus Jakarta Sans', sans-serif !important; ;
+}
+.brandicon{
+  transition: 0.5s;
+}
+.foranimate{
+  &:hover .brandicon{
+    transform: rotate(360deg);
+  }
+  &:hover .nav-link.active{
+    transform: translateY(-3px);
+    border-bottom: 2px solid black;
+
+  }
+}
+.nav-link.active{
+  border-bottom: 3px solid red;
+
+}
